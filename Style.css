@@ -108,7 +108,6 @@ html{
   margin-left: 100px; 
 }
 
-
 .info{
   font-weight: bolder;
   color: rgb(139, 165, 187);
@@ -117,11 +116,18 @@ html{
 
 .designation{
   color: royalblue;
+  animation: typing 3.5s steps(40, end) forwards;
 }
 
 .myname{
   color: royalblue;
   font-family: cursive;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 .rsmbtn{
@@ -178,7 +184,7 @@ html{
   /* margin-right: 10rem; */
 }
 
-.about-info h1{
+.heading{
   /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 40px;
   color: royalblue;
@@ -187,6 +193,8 @@ html{
   margin-bottom: 20px;
   font-weight: bolder;
   color: rgb(139, 165, 187);
+  text-align: center;
+  text-shadow: 0px 10px 10px gray;
 
 }
 
@@ -198,7 +206,84 @@ html{
   color: black;
 }
 
+/* Skills Section Styling */
+
+.skills-section{
+  /* border: 2px solid black; */
+  height: 600px;
+  width: 100%;
+}
+
+.skills-info{
+  /* border: 2px solid blue; */
+  /* height: 400px;
+  width: 100%;
+  background-color: aqua; */
+  text-align: center;
+}
+
+.skills-info div{
+  margin-left: 5rem;
+  margin-top: 2rem;
+  /* border: 1px solid black; */
+  display: inline-block ;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 20px 10px 20px gray;
+  border-radius: 20%;
+}
+
+.skills-info div:hover{
+  transition-duration: 1s;
+  transform: scale(1.2);
+}
+
+.skills-info img{
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+.skills-info .skill{
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 1em;
+}
+
+.html-img{
+  height: 200px;
+  width: 200px;
+}
+
+.css img{
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
 
 
+/* Project Section Styling */
 
+.project-section{
+  height: 500px;
+  width: 80%;
+  /* border: 2px solid black; */
+  padding: 30px;
+  margin-left: 9rem;
+  padding-top: 10px;
 
+}
+
+.project-img{
+  /* border: 2px solid black; */
+  border-radius: 50px;
+  height: 30em;
+  width: 0em;
+  opacity:  60%;
+  transition-duration: 1s;
+}
+
+.project-img:hover{
+  transform: scale(1.2);
+}
