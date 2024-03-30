@@ -1,0 +1,359 @@
+/* Universal Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* Navbar styling */
+
+.navigation-bar{
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  font-size: 25px;
+}
+
+.brand{
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    color: rgb(18, 15, 42) !important;
+}
+
+.nav-div li{
+    font-family: sans-serif;
+    color: black;
+    margin-left: 20px;
+}
+
+.nav-div li:hover{
+    text-decoration: underline solid black;
+    font-weight: bolder;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse both;
+	        animation: tracking-in-expand 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite alternate-reverse both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+/* Main Container Styling */
+
+.main-container{
+  padding-top: 72px;
+}
+
+.portfolio-sections{
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.portfolio-sections h1{
+  margin-top: 25px;
+}
+
+
+/* Home Page Styling */
+
+#home{
+    background-image: url("https://miro.medium.com/v2/resize:fit:1272/1*ZSVmWGcc1weENb0ShawWxw.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    background-position: 90% 90%;
+    border: none;
+    background-size: 45%;
+} 
+
+#home-info{
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  margin-top: 120px;
+  margin-left: 100px; 
+}
+
+.info{
+  font-weight: bolder;
+  color: rgb(139, 165, 187);
+  font-size: 35px;
+}
+
+.designation{
+  color: royalblue;
+  animation: typing 3.5s steps(40, end) forwards;
+}
+
+.myname{
+  color: royalblue;
+  font-family: cursive;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.rsmbtn{
+  height: 40px;
+  width: 100px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: royalblue;
+  color: white;
+  transition-duration: 1s;
+}
+
+.rsmbtn:hover{
+  background-color: white;
+  color: royalblue;
+  border: 3px solid royalblue;
+  transform: scale(1.1);
+}
+
+/* About Page Styling */
+
+.about-section{
+  width: 80%;
+  height: 500px;
+  /* border: 2px solid black; */
+  display: flex;
+  margin-left: 10%;
+  /* background-color: rgb(156, 172, 213); */
+
+}
+
+.about-section div{
+  height: 500px;
+  width: 50%;
+  /* border: 2px solid blue; */
+}
+
+.mahesh-img{
+  width: 400px;
+  height: 470px;
+  top: 2rem;
+  margin-left: 5rem;
+  border-radius: 50%;
+  /* border: 1px solid blue; */
+}
+
+.about-info{
+  padding-top: 3rem;
+  /* padding-right: 2rem; */
+  text-align: center;
+  /* margin-right: 10rem; */
+}
+
+.heading{
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 40px;
+  color: royalblue;
+  padding: 0px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color: rgb(139, 165, 187);
+  text-align: center;
+  text-shadow: 0px 10px 10px gray;
+
+}
+
+.about-info p{
+  text-align: justify;
+  text-indent: 100px;
+  line-height: 40px;
+  font-size: larger;
+  color: black;
+}
+
+/* Skills Section Styling */
+
+.skills-section{
+  /* border: 2px solid black; */
+  height: 600px;
+  width: 100%;
+}
+
+.skills-info{
+  /* border: 2px solid blue; */
+  /* height: 400px;
+  width: 100%;
+  background-color: aqua; */
+  text-align: center;
+}
+
+.skills-info div{
+  margin-left: 5rem;
+  margin-top: 2rem;
+  /* border: 1px solid black; */
+  display: inline-block ;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 20px 10px 20px gray;
+  border-radius: 20%;
+}
+
+.skills-info div:hover{
+  transition-duration: 1s;
+  transform: scale(1.2);
+}
+
+.skills-info img{
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+.skills-info .skill{
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 1em;
+}
+
+.html-img{
+  height: 200px;
+  width: 200px;
+}
+
+.css img{
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+
+/* Project Section Styling */
+
+.project-section{
+  height: 500px;
+  width: 80%;
+  border: 2px solid black;
+  padding: 30px;
+  margin-left: 9rem;
+  padding-top: 10px;
+
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.project-img{
+  /* border: 2px solid black; */
+  border-radius: 50px;
+  height: 30em;
+  width: 0em;
+  opacity:  60%;
+  transition-duration: 1s;
+  background-color: antiquewhite;
+}
+
+.project-img:hover{
+  transform: scale(1.2);
+}
+
+
+/* Contact section Styling */
+
+/* .contact-info{
+  border: 2px solid black;
+  height: 500px;
+  width: 50%;
+  display: inline-block;
+} */
+
+.contact-section{
+  border: 2px solid black;
+  height: 400px;
+  width: 110%;
+  display: flex;
+  margin-left: 9rem;
+  padding-top: 2em;
+  border-radius: 20px;
+}
+
+.contact-form{
+  width: 80%;
+  /* border: 2px solid blue; */
+  
+}
+
+.social-info{
+  width: 20%;
+  /* border: 2px solid black; */
+}
+
+.contact-img{
+  width: 30%;  
+  margin-left: 4em; 
+  display: block;  
+  margin-top: 2em;
+  transition-duration: 1s;
+}
+
+.contact-img:hover{
+  transform: scale(1.2);
+}
+
+/* Footer Styling Here */
+
+.footer-section{
+  height: 3rem;
+  background-color: rgb(65, 65, 66);
+  border: 2px solid black;
+  margin-top: -50px;
+  margin-bottom: -10px;
+}
+
+.footer-section p{
+  padding-top: 10px;
+  color: white;
+  margin-left: 20rem;
+  
+}
+
+.footer-section span{
+
+  margin: 20px;
+  color: rgb(128, 128, 211);
+  /* color: white; */
+}
